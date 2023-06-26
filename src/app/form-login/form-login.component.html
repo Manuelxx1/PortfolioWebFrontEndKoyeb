@@ -1,0 +1,84 @@
+
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngStyle]="{'display':pmostrarForm}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Ingrese Sus Datos</h4>
+      </div>
+      <div class="modal-body">
+        <div class="col-sm-3 offset-sm-3">
+  
+
+            <form [formGroup]="pform" (ngSubmit) = "onSubmitForm()">
+       
+              <div class="form-group">
+                <label> USUARIO</label>
+                <input type="text" class ="form-control" id = "nombre"
+                    [(ngModel)] = "pPersona.nombre" name = "nombre" placeholder="Nombre" formControlName="nombre" 
+                 required="required" >
+          
+            </div>
+
+             <!-- Gracias al getter que configuramos en el login.component.ts obtenemos los datos -->
+    <!-- A fin de lograr una mejor experiencia de usuario, 
+       podremos crear los  mensajes para el usuario y los mismos, 
+       se mostrarán dependiendo de los validators 
+       Para ello, utilizaremos las directivas *ngIf-->
+       <!--touched Propiedad booleana que especifica si el form control fue tocado por el usuario-->
+       <!--errors Propiedad booleana que especifica si el formulario tiene errores (falla una o más validaciones)!-->
+    <div *ngIf="getterUsuario?.errors  && getterUsuario?.touched">
+      <p *ngIf="getterUsuario?.hasError('required')" class="error">
+            El nombre es requerido
+        </p>
+   
+   
+          <p *ngIf="getterUsuario?.errors" class="error">
+<!--si pasa de los 12 caracteres se activa-->
+            El nombre puede contener hasta 12 caracteres
+          </p>
+    </div>
+
+    <br/>
+            
+            <div class="form-group">
+                <label>CONTRASEÑA</label>
+                <input type="text" class ="form-control" id = "password"
+                    [(ngModel)] = "pPersona.password" name = "password"  placeholder="Password"   formControlName="password"
+                   required="required" >
+          
+            </div>
+
+              <!-- Gracias al getter que configuramos en el login.component.ts obtenemos los datos -->
+    <div *ngIf="getterPassword?.errors  && getterPassword?.touched">
+      <p *ngIf="getterPassword?.hasError('required')" class="error">
+        El password es requerido.
+      </p>
+      <p *ngIf="getterPassword?.errors" class="error">
+        El password debe ser de 8 a 20 caracteres
+      </p>
+    </div>
+      <br/>
+    
+           
+                <button class = "btn btn-success" type ="submit">INGRESAR</button><br><br>
+  
+
+    <h3>{{pDatosenviados}}</h3>
+
+            </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" 
+                (click)="closePopup()">
+         CERRAR
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+

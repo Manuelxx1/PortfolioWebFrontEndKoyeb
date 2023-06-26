@@ -1,0 +1,488 @@
+
+.BannerLogo{
+ 
+   width:1200px;
+     height:400px;
+     
+    
+}
+.RedesSociales{
+   
+    position:absolute;
+    top: 5px;
+    left: 300px;
+
+
+}
+.RedesSociales1{
+    
+    position:absolute;
+    top: 5px;
+    left: 500px;
+
+
+}
+.RedesSociales2{
+   
+    position:absolute;
+    top: 5px;
+    left: 550px;
+   
+
+}
+.RedesSociales3{
+
+    position:absolute;
+ 
+    top: 5px;
+    left: 600px;
+
+ 
+
+}
+.RedesSociales4{
+
+    position:absolute;
+ 
+    top: 5px;
+    left: 650px;
+
+ 
+
+}
+.FotoPerfil{
+  
+    position:absolute;
+    top: 400px;
+    left: 50px;
+    
+
+}
+.FotoPerfil h1{
+    position:relative;
+    top: 10px;
+    left: -20px;
+}
+
+
+.ButtonLoginsession{
+    position:absolute;
+    width: 80px;
+    height: 30px;
+    top: 5px;
+    left: 1130px;
+}
+
+.InformacionPersonal{
+    /*position:relative;*/
+    margin-left: 5px;
+    margin-top: 150px;
+    /*posicion absolute
+       margin-left: 5px;
+    margin-top: 150px;
+    */
+
+}
+.EXPERIENCIALABORAL{
+    /*position:relative;*/
+    margin-left: 5px;
+    margin-top:5px;
+        /*posicion absolute
+       margin-left: 5px;
+    margin-top: 300px;
+    */
+
+
+}
+.Educacion{
+    /*position:relative;*/
+    margin-left: 5px;
+    margin-top:5px;
+        /*posicion absolute
+       margin-left: 5px;
+    margin-top: 400px;
+    */
+
+}
+.HardAndSoftSkills{
+    /*position:relative;*/
+    margin-left: 5px;
+    margin-top:5px;
+        /*posicion absolute
+       margin-left: 5px;
+    margin-top: 400px;
+    */
+}
+.porcentajeimgp{
+
+position: relative;
+top: -50px;
+left: 250px;
+
+
+}
+.porcentajeimg{
+
+    position: relative;
+    top: -40px;
+    left: 250px;
+    width: 132px;
+    height: 132px;
+    
+    }
+    .porcentajeimg2p{
+
+        position: relative;
+        top: -50px;
+        left: 250px;
+        
+        
+        }
+.porcentajeimg2{
+    
+
+    position: relative;
+   margin-top: -70px;
+    left: 250px;
+    width: 150px;
+    height: 150px;
+
+    
+    }
+    .agregar{
+        position: absolute;
+        margin-top:-60px;
+        margin-left: 800px;
+    }
+    .editar{
+        position: absolute;
+        margin-top:-60px;
+        margin-left: 950px;
+    }
+    .eliminar{
+        position: absolute;
+        margin-top:-60px;
+        margin-left: 1100px;
+    }
+    .agregarExperiencialaboral{
+        position: absolute;
+        margin-top:-20px;
+        margin-left: 800px;
+    }
+    .editarExperiencialaboral{
+        position: absolute;
+        margin-top:-20px;
+        margin-left: 950px;
+    }
+    .eliminarExperiencialaboral{
+        position: absolute;
+        margin-top:-20px;
+        margin-left: 1100px;
+    }
+    .agregarEducacion{
+        position: absolute;
+        margin-top:-20px;
+        margin-left: 800px;
+    }
+    .editarEducacion{
+        position: absolute;
+        margin-top:-20px;
+        margin-left: 950px;
+    }
+    .eliminarEducacion{
+        position: absolute;
+        margin-top:-20px;
+        margin-left: 1100px;
+  
+    }
+    .DivSessionIniciada{
+        position: absolute;
+        margin-top:-400px;
+        margin-left: 950px;
+        color:rgb(22, 247, 22);
+    }
+  
+    .ButtonLogoutSession{
+        position:absolute;
+        width: 80px;
+        height: 30px;
+        top: 5px;
+        left: 1130px;
+    }
+    .SessionIniciadaresp{
+        display: none;
+       
+    }
+
+    .TokenEditarPortfolio{
+        position:absolute; 
+        margin-top:50px;
+        margin-left: 600px;
+
+    }
+    .t1{
+       
+        color:red;
+      
+
+    }
+    .t2{
+     
+     
+        color:magenta;
+       
+       
+
+    }
+
+    .t3{
+       
+        color:cyan;
+        margin-top: -18px;
+       
+
+    }
+
+    /*especificacion para hacer responsive el diseño
+cuando se detecta que la screen se redujo a 800px
+se procede a cambiar los valores del HTML y el diseño
+*/
+@media screen and (max-width: 800px) {
+    .DivBannerLogo{
+        position:absolute;
+        top: 120px;
+    }
+.BannerLogo{
+   width: 100%;
+     height:200px;
+    
+     
+    
+}
+.RedesSociales{
+   
+    position:relative;
+    top: 5px;
+    left: 0px;
+
+
+}
+.RedesSociales1{
+    
+    position:absolute;
+    top: 5px;
+    left: 2px;
+
+
+}
+.RedesSociales2{
+   
+    position:absolute;
+    top: 5px;
+    left: 50px;
+   
+
+}
+.RedesSociales3{
+
+    position:absolute;
+ 
+    top: 5px;
+    left: 100px;
+
+ 
+
+}
+.RedesSociales4{
+
+    position:absolute;
+ 
+    top: 5px;
+    left: 150px;
+
+ 
+
+}
+.FotoPerfil{
+  
+    position:absolute;
+    top: 260px;
+    left: 50px;
+    
+
+}
+.FotoPerfil h1{
+    position:relative;
+    top: 5px;
+    left: -20px;
+}
+
+
+.ButtonLoginsession{
+    position:absolute;
+    width: 80px;
+    height: 30px;
+    top: 5px;
+    left: 230px;
+}
+
+.ButtonLogoutSession{
+    position:absolute;
+    width: 80px;
+    height: 30px;
+    top: 5px;
+    left: 230px;
+}
+
+.SessionIniciadaresp{
+    display: block;
+    position:absolute;
+    top: 50px;
+    left: 230px;
+    color:rgb(22, 247, 22);
+}
+.InformacionPersonal{
+    /*position:relative;* al banner Desarrollador Web*/
+    margin-left: 5px;
+    margin-top: 450px;
+    width: 100%;
+    border: 2px;
+    /*posicion absolute
+       margin-left: 5px;
+    margin-top: 150px;
+    */
+
+}
+.EXPERIENCIALABORAL{
+    /*position:relative;* a InformacionPersonal*/
+    margin-left: 5px;
+    margin-top:5px;
+    width: 100%;
+        /*posicion absolute
+       margin-left: 5px;
+    margin-top: 300px;
+    */
+
+
+}
+.Educacion{
+    /*position:relative;* a EXPERIENCIALABORAL*/
+    margin-left: 5px;
+    margin-top:5px;
+    width: 100%;
+        /*posicion absolute
+       margin-left: 5px;
+    margin-top: 400px;
+    */
+
+}
+.HardAndSoftSkills{
+    /*position:relative;* a Educacion*/
+    margin-left: 5px;
+    margin-top:5px;
+    width: 100%;
+        /*posicion absolute
+       margin-left: 5px;
+    margin-top: 400px;
+    */
+}
+.porcentajeimgp{
+
+position: relative;
+top: -10px;
+left: 150px;
+
+
+}
+.porcentajeimg{
+
+    position: relative;
+    top: -30px;
+    left: 130px;
+    width: 150px;
+    height: 100px;
+    
+    }
+    .porcentajeimg2p{
+
+        position: relative;
+        top: -20px;
+        left: 150px;
+        
+        
+        }
+.porcentajeimg2{
+    
+
+    position: relative;
+   margin-top: -50px;
+    left: 130px;
+    width: 80px;
+    height: 80px;
+
+    
+    }
+   
+    .editar{
+        position: absolute;
+        margin-top:-40px;
+        margin-left: 100px;
+    }
+    .eliminar{
+        position: absolute;
+        margin-top:-40px;
+        margin-left: 200px;
+    }
+    .editarExperiencialaboral{
+        position: absolute;
+        margin-top:-20px;
+        margin-left: 190px;
+    }
+    .eliminarExperiencialaboral{
+        position: absolute;
+        margin-top:-20px;
+        margin-left: 240px;
+    }
+    .editarEducacion{
+        position: absolute;
+        margin-top:-20px;
+        margin-left: 100px;
+    }
+    .eliminarEducacion{
+        position: absolute;
+        margin-top:-20px;
+        margin-left: 200px;
+  
+    }
+
+
+    .TokenEditarPortfolio{
+        position:absolute; 
+        margin-top:50px;
+        margin-left: 600px;
+
+    }
+    .t1{
+       
+        color:red;
+      
+
+    }
+    .t2{
+     
+     
+        color:magenta;
+       
+       
+
+    }
+
+    .t3{
+       
+        color:cyan;
+        margin-top: -18px;
+       
+
+    }
+}
+ 

@@ -1,0 +1,50 @@
+
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngStyle]="{'display':pdisplayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">AGREGAR</h4>
+      </div>
+      <div class="modal-body">
+        <div class="col-sm-3 offset-sm-3">
+  
+
+            <form  (ngSubmit) = "onSubmitForm()">
+       
+              <div class="form-group">
+                <label> INGRESE SU DNI</label>
+                <input type="text" class ="form-control" id = "dni"
+                    [(ngModel)] = "pPersona.dni" name = "dni" 
+                 required="required" >
+          
+            </div>
+                <div class="form-group">
+             
+                    <label> AGREGAR</label>
+                    <textarea [(ngModel)] = "pPersona.informacion"  id = "informacion"
+                  
+
+                         name = "informacion"  placeholder="Agregar Datos"
+   ></textarea>
+                </div>
+           
+                <button class = "btn btn-success" type ="submit">ENVIAR</button>
+  <br><br>
+  <h3>{{pDatosAgregados}}</h3>
+            </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" 
+                (click)="closePopup()">
+CERRAR
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
